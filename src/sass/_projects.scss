@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255, 95%);
+    background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     color: $secondary_color;
@@ -30,24 +30,22 @@
     display:inline-flex;
     white-space: nowrap;
     transition: transform .3s linear;
-    
 }
 
 .items{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s linear;
-    opacity: 0.5;
+    transition: width .3s linear;
     width: 30vw;
 
     .project{
-        height: 80%;
+        height: 90%;
         width: 80%;
-        border-radius: 10px;
-       background-color: gray;
+        border-radius: 2px;
+       background-color: rgb(0,0,0,80%);
 
-        iframe,.project-desc{
+        iframe,h3,a,p{
             display:none;
         }
 
@@ -62,7 +60,7 @@
 .carousel{
     width: 80vw;
     height:80vh;
-    min-height: 600px;
+    min-height: 650px;
 }
 
     
@@ -97,43 +95,34 @@
 
 .activeItem{
     width: 80vw;
-    opacity: 1;
     
     .project{
-        height: 90%;
         width: 90%;
-        max-width: 700px;
-        background-color: black;
+        max-width: 560px;
+        background-color: $secondary_color;
 
-        iframe,.project-desc{
-            display: block;
-            height: 50%;
-            width: 90%;
-            max-width: 600px;
-            margin: 20px auto;
+        h3,p,a{
+            display:block;
         }
 
         iframe{
-            box-shadow: 0 5px 5px grey;
+            display: block;
+            height: 49%;
+            width: 100%;
+            max-width: 600px;
         }
 
-        .project-desc{
-            background-color: $secondary_color;
-            height: fit-content;
-            padding: 10px;
-            border-radius: 10px;
-            background-image: linear-gradient(-140deg,#275950 3%,12%,
-            #9BF2EA 20%,
-            $secondary_color 20%);
-
-            a:link{
-                color: #9BF2EA;
-            }
-
-            a:visited{
-                color: #5b7673;
-            }
+        h3{
+            margin-top: 10px;
         }
 
+        a:link{
+            color: #9BF2EA;
+        }
+
+        a:visited{
+            color: #5b7673;
+        }
     }
+    
 }

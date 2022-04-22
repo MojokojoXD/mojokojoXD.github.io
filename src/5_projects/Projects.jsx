@@ -41,14 +41,23 @@ export default function Projects({scroll,setScroll}){
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-              <div className="project-desc">
-                <h3>Description </h3>
-                <p>A simple loan referral website.</p>
-                <a href="https://github.com/MojokojoXD/capstone-1.git" target='_blank' rel='noreferrer'>
-                  Git repo
-                </a><br/>
-                <a href="https://mojo-capstone.herokuapp.com" target="_blank" rel='noreferrer'>Hosted site</a>
-              </div>
+              <h3>Description </h3>
+              <p>A simple loan referral website.</p>
+              <a
+                href="https://github.com/MojokojoXD/capstone-1.git"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Git repo
+              </a>
+              <a
+                href="https://mojo-capstone.herokuapp.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Hosted site
+              </a>
+              
             </div>
           </CarouselItems>
           <CarouselItems>

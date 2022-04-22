@@ -49,7 +49,7 @@ export default function Carousel({children}){
 
 
 const activeItemCount = {
-  backgroundColor: "rgb(155, 242, 234)",
+  background: 'radial-gradient(circle at center top, $tertiary_color 50%,$primary_color)',
   color: "#260101",
   padding: '0 5px'
 };
